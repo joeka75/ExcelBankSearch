@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="File Search" Height="400" Width="600">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="File Path:" Margin="0,0,0,5"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="FilePath" Width="400" Margin="0,0,10,0"/>
+                <Button Content="Browse" Click="OnBrowseClick"/>
+            </StackPanel>
+            <TextBlock Text="Search Value:" Margin="10,0,0,5"/>
+            <TextBox Name="SearchValue" Margin="0,0,0,10"/>
+            <Button Content="Search" Click="OnSearchClick"/>
+            <TextBlock Text="Results:" Margin="10,10,0,5"/>
+            <TextBox Name="ResultTextBox" Margin="0,0,0,10" Height="200" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" IsReadOnly="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
